@@ -5,7 +5,7 @@
     $sql="SELECT *  FROM alumno;";
     $query=mysqli_query($con,$sql);
 
-    $row=mysqli_fetch_array($query);
+    //$row=mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,12 +25,12 @@
                             <h1>Ingrese datos</h1>
                                 <form action="insertar.php" method="POST">
 
-                                    <input type="text" class="form-control mb-3" name="cod_estudiante" placeholder="Cod estudiante">
-                                    <input type="text" class="form-control mb-3" name="dni" placeholder="Dni">
+                                    <input type="text" class="form-control mb-3" name="cod_estudiante" placeholder="Codigo">
+                                    <input type="text" class="form-control mb-3" name="dni" placeholder="DNI">
                                     <input type="text" class="form-control mb-3" name="nombres" placeholder="Nombres">
                                     <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
                                     
-                                    <input type="submit" class="btn btn-primary">
+                                    <input type="submit" class="btn btn-primary" value = "Agregar"> 
                                 </form>
                         </div>
 
@@ -39,7 +39,7 @@
                                 <thead class="table-success table-striped" >
                                     <tr>
                                         <th>Codigo</th>
-                                        <th>Dni</th>
+                                        <th>DNI</th>
                                         <th>Nombres</th>
                                         <th>Apellidos</th>
                                         <th></th>
